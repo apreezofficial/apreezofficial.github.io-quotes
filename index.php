@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--Meta Tags-->
+ <meta http-equiv="refresh" content="">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="description" content="Visit the largest  Quotes Gallery">
+    <meta name="author" content="Adedokun Precious">
+    <meta name="keywords" content="quotes, free quotes, nigeria quotes, chinese quotes, quotes gallery, daily quotes, strong quotes, chinese proverbs, best quotes, joker quotes, famous quotes, mark Zuckerberg quotes,elon musk quotes, quotes gallery, quotes hub, Ap, Adedokun, Adedokun Precious, ap quotes hub, dark quotes, Spiritual Quotes, copy quotes, random quotes,  precious, dark quotes, web design quotes, coding quotes">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Title-->
+    <title id="title">AP Quotes Gallery - Your One stop destination for Quotes</title>
+<!-- Main Stylesheet-->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+<!-- Bootstrap Icons-->
+        <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-icons.css'>
+<!-- Rel Icons-->
+<link href="img/logo.png" rel="icon">
+<link href="img/logo.png" rel="apple-touch-icon">
+</head>
+<!-- Main Body-->
+<body onpagehide="whyhide()">
+<body class="" onload="media(), quote(), copyright(), settheme(), name(), show_name()">
+<!-- Showing Of Name From local storage-->
+<center><p id="show_name"></p></center>
+<!-- Switch to toogle between themes from local storage-->
+    <label class="switch" id="theme">
+       <input type="checkbox" id="mode" onclick="mode()" checked>
+      <span class="slider round"></span>
+    </label>
+ <!-- To Show Copied after quotes and author is copied-->
+    <div id="copied"></div>
+<!-- General Quotes Container-->
+    <div id="quote_container">
+<!-- Header-->
+        <div id="header">Ap Quotes Gallery</div>
+        <br>
+        <!-- Quote Only Container-->
+        <div id="seventy">
+ <!-- Quotes text container-->
+        <div id="quote">
+           <i><q id="quote_box"></q></i>
+        </div>
+    </div>
+    <!-- Down Components-->
+        <div class="dw">
+          <!-- Random Quotes button-->
+            <a id="rand" onclick="rand()" title="Get Random Quote">Random Quote</a>
+      <!-- Copy to Clipboard Button-->
+        <a id="copy" onclick="copy()" title="Copy Quote and Author">Copy To ClipBoard</a>
+        <!-- Author -->
+        <div id="author"></div>
+    </div>
+    </div>
+<div id='ads_img'><img src="img/ads.png" alt="" srcset="" height='100px'></div>
+            <!-- Copyright Container-->
+            <div id="copyright">    
+                  <a class="bi bi-facebook" href="https://www.facebook.com/profile.php?id=61566647023596"></a>
+                  <a class="bi bi-telephone-fill" href="tel:+23408062266466"></a>
+	    </div>
+</body>
+</body>
+<!--Script Links-->
+ <script src='js/main.js'></script>
+ <script src="js/quote1.js"></script>
+</html>
