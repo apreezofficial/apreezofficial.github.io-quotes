@@ -12,7 +12,7 @@
 #loader{
  position:fixed;
     top:40%;
-    left:46%;
+    left:30%;
   place-items: center;
   display: grid;
 }
@@ -253,13 +253,6 @@ left:20%;
     #copied{
      text-align: center;
     }
-    #loader{
- position:fixed;
-    top:40%;
-    left:25%;
-  place-items: center;
-  display: grid;
-}
 #ads_img{
    left:20%;
    }
