@@ -275,6 +275,13 @@ left:20%;
     .logo{
         display: none;
     }
+    #loader{
+ position:fixed;
+    top:40%;
+    left:45%;
+  place-items: center;
+  display: grid;
+}
 }
 @media (max-width: 1024px) and (min-width: 769px){
     .dw{
@@ -291,6 +298,13 @@ left:20%;
     #copied{
      text-align: center;
     }
+    #loader{
+ position:fixed;
+    top:40%;
+    left:45%;
+  place-items: center;
+  display: grid;
+}
 }
 #theme{
     position: fixed;
