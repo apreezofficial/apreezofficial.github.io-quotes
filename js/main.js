@@ -1,3 +1,10 @@
+function load(){
+      setTimeout(loader, 1500)
+    }
+   function loader(){
+      document.getElementById('loader').style.display= "none";
+      document.getElementById('mainpage').style.display= "block"
+    }
 /* Function to Check Online Status */
 function online() {if (navigator.onLine == false) {
   alert("ApInfo : ❌ You are Offline");
@@ -101,7 +108,9 @@ function mode() {
         var author = document.getElementById('author');
         var header = document.getElementById('header');
         var copyright_box = document.getElementById('copyright');
+        var load_core = document.getElementById('load-core');
         body.style.backgroundColor = "var(--primary)";
+        load_core.style.backgroundColor = "var(--primary)";
         container.style.backgroundColor = "var(--arist)";
         container.style.border = "10px double var(--primary)";
         author.style.color = "var(--primary)";
@@ -116,7 +125,9 @@ document.getElementById('show_name').style.color = "var(--arist)";
         var author = document.getElementById('author');
         var header = document.getElementById('header');
         var copyright_box = document.getElementById('copyright');
+        var load_core = document.getElementById('load-core');
         body.style.backgroundColor = "var(--arist)";
+        load_core.style.backgroundColor = "var(--arist)";
         container.style.backgroundColor = "var(--primary)";
         container.style.border = "10px double var(--arist)";
         author.style.color = "var(--tertiary)";
@@ -135,7 +146,9 @@ function settheme(){
     var author = document.getElementById('author');
     var header = document.getElementById('header');
     var copyright_box = document.getElementById('copyright');
+    var load_core = document.getElementById('load-core');
     body.style.backgroundColor = "var(--primary)";
+    load_core.style.backgroundColor = "var(--primary)";
     container.style.backgroundColor = "var(--arist)";
     container.style.border = "10px double var(--primary)";
     author.style.color = "var(--primary)";
@@ -150,7 +163,9 @@ document.getElementById('show_name').style.color = "var(--arist)";
     var author = document.getElementById('author');
     var header = document.getElementById('header');
     var copyright_box = document.getElementById('copyright');
+    var load_core = document.getElementById('load-core');
     body.style.backgroundColor = "var(--arist)";
+    load_core.style.backgroundColor = "var(--arist)";
     container.style.backgroundColor = "var(--primary)";
     container.style.border = "10px double var(--arist)";
     author.style.color = "var(--tertiary)";
