@@ -1,0 +1,355 @@
+:root{
+    --primary: #964b00;
+    --secondary: #1A1D23;
+    --tertiary: #CCCCCC;
+    --arist: #fff599;
+    --soft: #F0F0F0;
+    --soot: #4E7971;
+}
+body{
+    background: var(--arist);
+}
+.logo{
+    animation: 500ms rot 2;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    position: fixed;
+}
+#show_name{
+color: var(--primary);
+font-weight:600;
+}
+@keyframes rot{
+    0%{
+            rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+#quote_container{
+width: 70%;
+position: fixed;
+background: var(--primary);
+left: 15%;
+top: 20%;
+border-radius: 30px 0 30px 0;
+animation: 500ms load;
+border: 10px double var(--arist);
+}
+ @keyframes load{
+    0%{
+        transform: translateY(-500px);
+    }
+ }
+ .dw{
+    display: flex;
+    position: relative;
+    left: 30%;
+    top: -30px;
+ }
+#quote{
+    color: var(--secondary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    height: 200px;
+    animation: 500ms move;
+    animation-delay: 500ms;
+    text-align: center;
+    font-size: larger;
+}
+#author{
+    color: var(--tertiary);
+    margin-top: 10px;
+    text-transform: capitalize;
+    animation: 500ms move;
+    animation-delay: 500ms;
+}
+#seventy{
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+#header{
+    color: var(--tertiary);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    position: relative;
+    text-align: center;
+    animation: 500ms move;
+    animation-delay: 500ms;
+}
+@keyframes move{
+    0%{
+        transform: translateX(-500px);
+    }
+}
+#copy{
+    background: var(--soft);
+    width: fit-content;
+    padding: 10px;
+    color: var(--secondary);
+    cursor: pointer;
+    margin-left: 40px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: 500ms move;
+    animation-delay: 700ms;
+    margin-right: 150px;
+    opacity:0.8;
+}
+#rand{
+    background: var(--soot);
+    color: var(--arist);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+    opacity: 0.8;
+    padding: 10px;
+    animation: 500ms move;
+    animation-delay: 1.1s;
+    cursor: pointer;   
+}
+#ads_img{
+    position: fixed;
+    bottom: 20px;
+    align-content:center;
+    font-size: large;
+left:38%;
+    font-weight: 900;
+    height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#rand:hover, #copy:hover{
+opacity:1;
+border:1px transparent;
+border-radius:5px;
+transition:0.05s;
+}
+#copied{
+    color: var(--secondary);
+    font-size: x-large;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0;
+}
+.wei{
+  font-weight: 700;
+ cursor:pointer;
+}
+.none{
+  opacity :0;
+}
+#copied.show{
+    opacity: 1;
+    animation: 300ms down;
+}
+@keyframes down{
+    0%{
+        transform: translateY(500px);
+    }
+}
+@media (max-width: 320px) {
+    #quote_container{
+        width: 95%;
+        left: 0%;
+    }
+#ads_img{
+left:20%;
+}
+    .dw{
+        left: 0%;
+        top: -10px;
+    }
+    #copy{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    img{
+        display: none;
+    }
+    #copied{
+     text-align: center;
+    }
+}
+@media (max-width: 375px) and (min-width: 321px){
+    #quote_container{
+        width: 95%;
+        left: 0%;
+    }
+    .dw{
+        left: 0%;
+        top: -10px;
+    }
+    #ads_img{
+   left:20%;
+   }
+    #rand{
+        margin-left: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    #copy{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #copied{
+     text-align: center;
+    }
+}
+@media (max-width: 425px) and (min-width: 376px){
+    #quote_container{
+        width: 95%;
+        left: 0%;
+    }
+    .dw{
+        left: 0%;
+        top: -10px;
+    }
+    #rand{
+        margin-left: 20px;
+    }
+    .logo{
+        display: none;
+    }
+    #copy{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #copied{
+     text-align: center;
+    }
+#ads_img{
+   left:20%;
+   }
+}
+@media (max-width: 768px) and (min-width: 426px){
+    .dw{
+        left: 0%;
+        top: -10px;
+    }
+    #rand{
+        margin-left: 20px;
+    }
+    #copy{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #copied{
+     text-align: center;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media (max-width: 1024px) and (min-width: 769px){
+    .dw{
+        left: 30px;
+        top: -10px;
+    }
+    #rand{
+        margin-left: 20px;
+    }
+    #copy{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #copied{
+     text-align: center;
+    }
+}
+#theme{
+    position: fixed;
+    left: 80%;
+    transition: 1s all;
+    cursor: pointer;
+    font-size: xx-large;
+}
+#theme2{
+    position: fixed;
+    left: 80%;
+    cursor: pointer;
+    transition: all 1s;
+    display: none;
+    font-size: xx-large;
+}
+#copyright{
+    position: fixed;
+    background: var(--primary);
+    color: var(--secondary);
+    bottom: 0;
+    left: 0;
+    font-size: large;
+    font-weight: 900;
+    height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secondary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--tertiary);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: var(--soot);
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.bi-facebook{
+  color :blue;
+}
+.bi-whatsapp{
+  color: green ;
+}
