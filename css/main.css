@@ -256,7 +256,7 @@ left:20%;
     #loader{
  position:fixed;
     top:40%;
-    left:35%;
+    left:25%;
   place-items: center;
   display: grid;
 }
