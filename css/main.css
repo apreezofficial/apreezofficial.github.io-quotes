@@ -12,6 +12,7 @@
 #loader{
  position:fixed;
     top:40%;
+    left:40%;
   place-items: center;
   display: grid;
 }
