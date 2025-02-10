@@ -253,6 +253,13 @@ left:20%;
     #copied{
      text-align: center;
     }
+    #loader{
+ position:fixed;
+    top:40%;
+    left:35%;
+  place-items: center;
+  display: grid;
+}
 #ads_img{
    left:20%;
    }
