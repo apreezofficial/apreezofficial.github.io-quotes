@@ -330,6 +330,8 @@ left:20%;
     font-size: large;
     font-weight: 900;
     height: fit-content;
+    padding-top: 10px;
+    padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     text-align: center;
