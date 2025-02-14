@@ -298,6 +298,9 @@ left:20%;
     #copied{
      text-align: center;
     }
+    #seventy{
+    bottom:40px;
+    }
     #loader{
  position:fixed;
     top:40%;
@@ -314,6 +317,9 @@ left:20%;
   place-items: center;
   display: grid;
 }   
+     #seventy{
+    bottom:40px;
+    }
 }
 #theme{
     position: fixed;
