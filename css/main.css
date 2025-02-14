@@ -299,7 +299,10 @@ left:20%;
      text-align: center;
     }
     #seventy{
-    bottom:40px;
+     width: 70%;
+    position: relative;
+    left: 15%;
+    bottom: 40px;
     }
     #loader{
  position:fixed;
@@ -318,7 +321,10 @@ left:20%;
   display: grid;
 }   
      #seventy{
-    bottom:40px;
+     width: 70%;
+    position: relative;
+    left: 15%;
+    bottom: 50px;
     }
 }
 #theme{
