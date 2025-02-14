@@ -320,13 +320,12 @@ left:20%;
   place-items: center;
   display: grid;
 }   
-     #seventy{
-     width: 70%;
+    .dw{
+    display: flex;
     position: relative;
-    left: 15%;
-    bottom: 50px;
-         top:50px;
-    }
+    left: 30%;
+    top: 0px;
+ }
 }
 #theme{
     position: fixed;
