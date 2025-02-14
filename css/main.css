@@ -298,13 +298,12 @@ left:20%;
     #copied{
      text-align: center;
     }
-    #seventy{
-     width: 70%;
+    .dw{
+    display: flex;
     position: relative;
-    left: 15%;
-    bottom: 40px;
-        top:40px;
-    }
+    left: 30%;
+    top: 0px;
+ }
     #loader{
  position:fixed;
     top:40%;
