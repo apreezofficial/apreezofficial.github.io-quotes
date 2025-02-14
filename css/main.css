@@ -306,7 +306,7 @@ left:20%;
   display: grid;
 }
 }
-@media ((min-width: 1024px){
+@media (min-width: 1024px){
     #loader{
  position:fixed;
     top:40%;
