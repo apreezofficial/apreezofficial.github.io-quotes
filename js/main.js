@@ -1,5 +1,5 @@
 function load(){
-      setTimeout(loader, 1500)
+      setTimeout(loader, 100)
     }
    function loader(){
       document.getElementById('loader').style.display= "none";
