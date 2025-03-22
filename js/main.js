@@ -188,7 +188,7 @@ document.getElementById('show_name').style.color = "var(--primary)";
         var month = dated.getMonth();
         var mth_show = months[month];
         var year = dated.getFullYear();
-        var text = "&copy Ap Quotes Gallery";
+        var text = "Made with Love 💕 💕 💕 from <a href="https://apcodesphere.vercel.app">Apcodesphere</a>;
         copyright_box.innerHTML += text + " " + "-" + mth_show + " " + year;
     }
 /* Function To change title when user make attempt to leave page */
