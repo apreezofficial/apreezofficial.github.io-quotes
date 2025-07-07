@@ -1,10 +1,12 @@
-function load(){
-      setTimeout(loader, 100)
-    }
-   function loader(){
-      document.getElementById('loader').style.display= "none";
-      document.getElementById('mainpage').style.display= "block"
-    }
+function load() {
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    const mainPage = document.getElementById('mainpage');
+
+    if (loader) loader.style.display = "none";
+    if (mainPage) mainPage.style.display = "block";
+  }, 100);
+}
 /* Function to Check Online Status */
 function online() {if (navigator.onLine == false) {
   alert("ApInfo : ❌ You are Offline");
